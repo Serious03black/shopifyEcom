@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}" class="{{ settings.body_class | default: 'template-index' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="{{ settings.colors_primary }}">
+
+  <title>
+    {{ page_title }}{% if current_tags %} — tagged "{{ current_tags | join: ', ' }}"{% endif %}
+    {% unless page_title contains shop.name %} — {{ shop.name }}{% endunless %}
+  </title>
+
+  <meta name="description" content="{{ page_description | default: shop.description }}">
+
+  {{ content_for_header }}
+
+  <!-- Theme styles -->
+  {{ 'base.css' | asset_url | stylesheet_tag }}
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+
+  <!-- Font Awesome -->
+  {{ 'all-fontawesome.min.css' | asset_url | stylesheet_tag }}
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ 'favicon.png' | asset_url }}">
+</head>
+
+<body class="template-{{ template | replace: '.', '-' | replace: '/', '-' }}">
+
+  {% section 'header' %}
+
+  <main id="MainContent" role="main">
+    {{ content_for_layout }}
+  </main>
+
+  {% section 'footer' %}
+
+  <!-- Scroll to top -->
+  <a href="#" id="scroll-top" aria-label="Back to top">
+    <i class="far fa-arrow-up-from-arc"></i>
+  </a>
+
+  <!-- Quick View Modal (rendered globally) -->
+  {% render 'quick-view-modal' %}
+
+  <!-- Scripts -->
+  <script src="{{ 'vendor.js' | asset_url }}" defer></script>
+  <script src="{{ 'theme.js' | asset_url }}" defer></script>
+
+  {{ content_for_body }}
+</body>
+</html>
