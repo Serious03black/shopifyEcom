@@ -1,0 +1,101 @@
+{% comment %}
+  Main Navigation Menu Snippet
+  Used in header.liquid via {% render 'main-menu' %}
+{% endcomment %}
+
+<nav class="main-menu">
+  <ul class="navbar-nav justify-content-end flex-grow-1 pe-lg-5">
+    <!-- Home -->
+    <li class="nav-item">
+      <a class="nav-link {% if template == 'index' %}active{% endif %}" href="{{ routes.root_url }}">
+        Home
+      </a>
+    </li>
+
+    <!-- Category Mega Menu -->
+    <li class="nav-item mega-menu dropdown">
+      <a class="nav-link dropdown-toggle" href="#" 
+         data-bs-toggle="dropdown" 
+         aria-expanded="false">
+        Category
+      </a>
+      <div class="dropdown-menu fade-down mega-menu-dropdown">
+        <div class="mega-content">
+          <div class="container-fluid px-lg-0">
+            <div class="row g-0">
+              <!-- Column 1 -->
+              <div class="col-12 col-lg-2">
+                <h5 class="mega-menu-title">Furniture</h5>
+                <ul class="mega-menu-item list-unstyled">
+                  <li><a class="dropdown-item" href="/collections/bedroom">Bedroom</a></li>
+                  <li><a class="dropdown-item" href="/collections/living-room">Living Room</a></li>
+                  <li><a class="dropdown-item" href="/collections/bathroom">Bathroom</a></li>
+                  <li><a class="dropdown-item" href="/collections/decoration">Decoration</a></li>
+                </ul>
+              </div>
+
+              <!-- Column 2 -->
+              <div class="col-12 col-lg-2">
+                <h5 class="mega-menu-title">More Furniture</h5>
+                <ul class="mega-menu-item list-unstyled">
+                  <li><a class="dropdown-item" href="/collections/office">Office</a></li>
+                  <li><a class="dropdown-item" href="/collections/kitchen">Kitchen</a></li>
+                  <li><a class="dropdown-item" href="/collections/storage">Storage</a></li>
+                  <li><a class="dropdown-item" href="/collections/lighting">Lighting</a></li>
+                </ul>
+              </div>
+
+              <!-- Column 3 -->
+              <div class="col-12 col-lg-2">
+                <h5 class="mega-menu-title">Seating</h5>
+                <ul class="mega-menu-item list-unstyled">
+                  <li><a class="dropdown-item" href="/collections/sofa">Sofa</a></li>
+                  <li><a class="dropdown-item" href="/collections/chair">Chair</a></li>
+                  <li><a class="dropdown-item" href="/collections/armchair">Armchair</a></li>
+                  <li><a class="dropdown-item" href="/collections/table">Table</a></li>
+                </ul>
+              </div>
+
+              <!-- Column 4 - Image Banner -->
+              <div class="col-12 col-lg-4 d-none d-lg-block">
+                <div class="mega-menu-img text-center">
+                  <a href="/collections/all">
+                    <img src="{{ 'banner/mega-menu-banner.jpg' | asset_url }}" 
+                         alt="Featured Furniture Collection" 
+                         class="img-fluid rounded">
+                  </a>
+                  <div class="mt-3">
+                    <a href="/collections/all" class="btn btn-primary btn-sm">
+                      Shop All Categories
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- New Arrivals -->
+    <li class="nav-item">
+      <a class="nav-link" href="/collections/new-arrivals">
+        New Arrivals
+      </a>
+    </li>
+
+    <!-- About -->
+    <li class="nav-item">
+      <a class="nav-link" href="/pages/about">
+        About
+      </a>
+    </li>
+
+    <!-- Contact -->
+    <li class="nav-item">
+      <a class="nav-link" href="/pages/contact">
+        Contact
+      </a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,285 @@
+Folder PATH listing
+Volume serial number is E8A6-5E98
+C:.
+¦   structure.txt
+¦   
++---assets
+¦   +---css
+¦   ¦   ¦   all-fontawesome.min.css
+¦   ¦   ¦   animate.min.css
+¦   ¦   ¦   bootstrap.min.css
+¦   ¦   ¦   flex-slider.min.css
+¦   ¦   ¦   jquery-ui.min.css
+¦   ¦   ¦   magnific-popup.min.css
+¦   ¦   ¦   nice-select.min.css
+¦   ¦   ¦   owl.carousel.min.css
+¦   ¦   ¦   owl.video.play.html
+¦   ¦   ¦   style.css
+¦   ¦   ¦   
+¦   ¦   +---images
+¦   ¦           ui-icons_444444_256x240.html
+¦   ¦           ui-icons_555555_256x240.html
+¦   ¦           ui-icons_777620_256x240.html
+¦   ¦           ui-icons_777777_256x240.html
+¦   ¦           ui-icons_cc0000_256x240.html
+¦   ¦           ui-icons_ffffff_256x240.html
+¦   ¦           
+¦   +---fonts
+¦   ¦       fa-brands-400.ttf
+¦   ¦       fa-brands-400.woff2
+¦   ¦       fa-duotone-900.ttf
+¦   ¦       fa-duotone-900.woff2
+¦   ¦       fa-light-300.ttf
+¦   ¦       fa-light-300.woff2
+¦   ¦       fa-regular-400.ttf
+¦   ¦       fa-regular-400.woff2
+¦   ¦       fa-solid-900.ttf
+¦   ¦       fa-solid-900.woff2
+¦   ¦       fa-thin-100.ttf
+¦   ¦       fa-thin-100.woff2
+¦   ¦       fa-v4compatibility.ttf
+¦   ¦       fa-v4compatibility.woff2
+¦   ¦       
+¦   +---img
+¦   ¦   +---about
+¦   ¦   ¦       01.jpg
+¦   ¦   ¦       02.jpg
+¦   ¦   ¦       03.jpg
+¦   ¦   ¦       
+¦   ¦   +---account
+¦   ¦   ¦       01.jpg
+¦   ¦   ¦       02.jpg
+¦   ¦   ¦       03.jpg
+¦   ¦   ¦       04.jpg
+¦   ¦   ¦       05.jpg
+¦   ¦   ¦       
+¦   ¦   +---affiliate
+¦   ¦   ¦       01.jpg
+¦   ¦   ¦       
+¦   ¦   +---banner
+¦   ¦   ¦       big-banner.jpg
+¦   ¦   ¦       mega-menu-banner.jpg
+¦   ¦   ¦       mid-banner-1.jpg
+¦   ¦   ¦       mid-banner-2.jpg
+¦   ¦   ¦       mini-banner-1.jpg
+¦   ¦   ¦       mini-banner-2.jpg
+¦   ¦   ¦       mini-banner-3.jpg
+¦   ¦   ¦       popup-banner.jpg
+¦   ¦   ¦       shop-banner.jpg
+¦   ¦   ¦       
+¦   ¦   +---blog
+¦   ¦   ¦       01.jpg
+¦   ¦   ¦       02.jpg
+¦   ¦   ¦       03.jpg
+¦   ¦   ¦       author.jpg
+¦   ¦   ¦       bs-1.jpg
+¦   ¦   ¦       bs-2.jpg
+¦   ¦   ¦       bs-3.jpg
+¦   ¦   ¦       com-1.jpg
+¦   ¦   ¦       com-2.jpg
+¦   ¦   ¦       com-3.jpg
+¦   ¦   ¦       single.jpg
+¦   ¦   ¦       
+¦   ¦   +---brand
+¦   ¦   ¦       01.png
+¦   ¦   ¦       02.png
+¦   ¦   ¦       03.png
+¦   ¦   ¦       04.png
+¦   ¦   ¦       05.png
+¦   ¦   ¦       06.png
+¦   ¦   ¦       
+¦   ¦   +---breadcrumb
+¦   ¦   ¦       01.jpg
+¦   ¦   ¦       
+¦   ¦   +---category
+¦   ¦   ¦       01.png
+¦   ¦   ¦       02.png
+¦   ¦   ¦       03.png
+¦   ¦   ¦       04.png
+¦   ¦   ¦       05.png
+¦   ¦   ¦       06.png
+¦   ¦   ¦       07.png
+¦   ¦   ¦       08.png
+¦   ¦   ¦       09.png
+¦   ¦   ¦       
+¦   ¦   +---choose
+¦   ¦   ¦       01.jpg
+¦   ¦   ¦       
+¦   ¦   +---coming-soon
+¦   ¦   ¦       01.jpg
+¦   ¦   ¦       
+¦   ¦   +---error
+¦   ¦   ¦       01.png
+¦   ¦   ¦       
+¦   ¦   +---gallery
+¦   ¦   ¦       01.jpg
+¦   ¦   ¦       02.jpg
+¦   ¦   ¦       03.jpg
+¦   ¦   ¦       04.jpg
+¦   ¦   ¦       05.jpg
+¦   ¦   ¦       06.jpg
+¦   ¦   ¦       
+¦   ¦   +---hero
+¦   ¦   ¦       01.png
+¦   ¦   ¦       02.png
+¦   ¦   ¦       03.png
+¦   ¦   ¦       bg.jpg
+¦   ¦   ¦       slider-1.jpg
+¦   ¦   ¦       slider-2.jpg
+¦   ¦   ¦       slider-3.jpg
+¦   ¦   ¦       
+¦   ¦   +---icon
+¦   ¦   ¦       account.svg
+¦   ¦   ¦       armchair.svg
+¦   ¦   ¦       award.svg
+¦   ¦   ¦       bathroom.svg
+¦   ¦   ¦       bedroom.svg
+¦   ¦   ¦       chair.svg
+¦   ¦   ¦       commission.svg
+¦   ¦   ¦       decoration.svg
+¦   ¦   ¦       delivery.svg
+¦   ¦   ¦       employee.svg
+¦   ¦   ¦       experience.svg
+¦   ¦   ¦       kitchen.svg
+¦   ¦   ¦       light.svg
+¦   ¦   ¦       living.svg
+¦   ¦   ¦       office.svg
+¦   ¦   ¦       payout.svg
+¦   ¦   ¦       price.svg
+¦   ¦   ¦       promote.svg
+¦   ¦   ¦       quote.svg
+¦   ¦   ¦       rate.svg
+¦   ¦   ¦       sale.svg
+¦   ¦   ¦       sofa.svg
+¦   ¦   ¦       storage.svg
+¦   ¦   ¦       table.svg
+¦   ¦   ¦       warranty.svg
+¦   ¦   ¦       
+¦   ¦   +---instagram
+¦   ¦   ¦       01.jpg
+¦   ¦   ¦       02.jpg
+¦   ¦   ¦       03.jpg
+¦   ¦   ¦       04.jpg
+¦   ¦   ¦       05.jpg
+¦   ¦   ¦       06.jpg
+¦   ¦   ¦       07.jpg
+¦   ¦   ¦       
+¦   ¦   +---logo
+¦   ¦   ¦       favicon.png
+¦   ¦   ¦       logo-light.png
+¦   ¦   ¦       logo.png
+¦   ¦   ¦       logoOLD.png
+¦   ¦   ¦       
+¦   ¦   +---mainLogos
+¦   ¦   ¦       favicon.png
+¦   ¦   ¦       logo_hz.png
+¦   ¦   ¦       logo_vt.png
+¦   ¦   ¦       
+¦   ¦   +---newsletter
+¦   ¦   ¦       01.jpg
+¦   ¦   ¦       
+¦   ¦   +---payment
+¦   ¦   ¦       amex.svg
+¦   ¦   ¦       cod-3.svg
+¦   ¦   ¦       discover.svg
+¦   ¦   ¦       mastercard.svg
+¦   ¦   ¦       payoneer.svg
+¦   ¦   ¦       paypal-2.svg
+¦   ¦   ¦       paypal.svg
+¦   ¦   ¦       visa.svg
+¦   ¦   ¦       
+¦   ¦   +---product
+¦   ¦   ¦       01.png
+¦   ¦   ¦       02.png
+¦   ¦   ¦       03.png
+¦   ¦   ¦       04.png
+¦   ¦   ¦       05.png
+¦   ¦   ¦       06.png
+¦   ¦   ¦       07.png
+¦   ¦   ¦       08.png
+¦   ¦   ¦       09.png
+¦   ¦   ¦       10.png
+¦   ¦   ¦       11.png
+¦   ¦   ¦       12.png
+¦   ¦   ¦       13.png
+¦   ¦   ¦       14.png
+¦   ¦   ¦       15.png
+¦   ¦   ¦       16.png
+¦   ¦   ¦       17.png
+¦   ¦   ¦       18.png
+¦   ¦   ¦       19.png
+¦   ¦   ¦       20.png
+¦   ¦   ¦       21.png
+¦   ¦   ¦       22.png
+¦   ¦   ¦       23.png
+¦   ¦   ¦       24.png
+¦   ¦   ¦       25.png
+¦   ¦   ¦       26.png
+¦   ¦   ¦       27.png
+¦   ¦   ¦       b1.png
+¦   ¦   ¦       b10.png
+¦   ¦   ¦       b2.png
+¦   ¦   ¦       b4.png
+¦   ¦   ¦       b5.png
+¦   ¦   ¦       b7.png
+¦   ¦   ¦       
+¦   ¦   +---shape
+¦   ¦   ¦       01.png
+¦   ¦   ¦       02.png
+¦   ¦   ¦       
+¦   ¦   +---team
+¦   ¦   ¦       01.jpg
+¦   ¦   ¦       02.jpg
+¦   ¦   ¦       03.jpg
+¦   ¦   ¦       04.jpg
+¦   ¦   ¦       
+¦   ¦   +---testimonial
+¦   ¦   ¦       01.jpg
+¦   ¦   ¦       02.jpg
+¦   ¦   ¦       03.jpg
+¦   ¦   ¦       04.jpg
+¦   ¦   ¦       05.jpg
+¦   ¦   ¦       
+¦   ¦   +---video
+¦   ¦           01.jpg
+¦   ¦           
+¦   +---js
+¦           bootstrap.bundle.min.js
+¦           contact-form.js
+¦           countdown.min.js
+¦           counter-up.js
+¦           flex-slider.js
+¦           imagesloaded.pkgd.min.js
+¦           isotope.pkgd.min.js
+¦           jquery-3.7.1.min.js
+¦           jquery-ui.min.js
+¦           jquery.appear.min.js
+¦           jquery.easing.min.js
+¦           jquery.magnific-popup.min.js
+¦           jquery.nice-select.min.js
+¦           main.js
+¦           modernizr.min.js
+¦           owl.carousel.min.js
+¦           wow.min.js
+¦           
++---config
+¦       settings_schema.json
+¦       
++---layout
+¦       theme.liquid
+¦       
++---locales
++---sections
+¦       featured-collection.liquid
+¦       header.liquid
+¦       hero-slider.liquid
+¦       tabbed-popular-products.liquid
+¦       top-categories-slider.liquid
+¦       
++---snippets
+¦       product-card.liquid
+¦       
++---templates
+¦       index.json
+¦       
++---theme.liquid
