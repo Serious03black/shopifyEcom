@@ -1,0 +1,87 @@
+{
+  "name": "Homepage",
+  "sections": {
+    "hero": {
+      "type": "hero-slider"
+    },
+    "categories": {
+      "type": "top-categories-slider"
+    },
+    "mini-banners": {
+      "type": "banner-grid-3col"
+    },
+    "trending": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Trending Items",
+        "collection": "trending"
+      }
+    },
+    "big-promo": {
+      "type": "big-promo-banner"
+    },
+    "featured": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured Items",
+        "collection": "featured"
+      }
+    },
+    "usp": {
+      "type": "usp-bar"
+    },
+    "popular": {
+      "type": "tabbed-popular-products"
+    },
+    "why-choose": {
+      "type": "why-choose-us"
+    },
+    "about": {
+      "type": "about-us"
+    },
+    "deal": {
+      "type": "deal-slider"
+    },
+    "triple-lists": {
+      "type": "triple-product-lists"
+    },
+    "brands": {
+      "type": "brand-slider"
+    },
+    "gallery": {
+      "type": "gallery-grid"
+    },
+    "testimonials": {
+      "type": "testimonial-slider"
+    },
+    "blog": {
+      "type": "latest-blog-posts"
+    },
+    "newsletter": {
+      "type": "newsletter"
+    },
+    "instagram": {
+      "type": "instagram-feed"
+    }
+  },
+  "order": [
+    "hero",
+    "categories",
+    "mini-banners",
+    "trending",
+    "big-promo",
+    "featured",
+    "usp",
+    "popular",
+    "why-choose",
+    "about",
+    "deal",
+    "triple-lists",
+    "brands",
+    "gallery",
+    "testimonials",
+    "blog",
+    "newsletter",
+    "instagram"
+  ]
+}

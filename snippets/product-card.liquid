@@ -1,0 +1,67 @@
+{%- liquid
+  assign product = product_card_product | default: product
+  assign show_secondary = section.settings.show_secondary_image | default: true
+-%}
+
+<div class="product-item">
+  <div class="product-img">
+    {%- if product.tags contains 'new' -%}
+      <span class="type new">New</span>
+    {%- elsif product.compare_at_price > product.price -%}
+      <span class="type discount">
+        {{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}% Off
+      </span>
+    {%- endif -%}
+
+    <a href="{{ product.url }}" class="full-unstyled-link">
+      {{
+        product.featured_media
+        | image_url: width: 800
+        | image_tag: loading: 'lazy', class: 'primary'
+      }}
+
+      {%- if show_secondary and product.media[1] -%}
+        {{
+          product.media[1]
+          | image_url: width: 800
+          | image_tag: loading: 'lazy', class: 'secondary'
+        }}
+      {%- endif -%}
+    </a>
+
+    <div class="product-action-wrap">
+      <div class="product-action">
+        <a href="#" class="quickview-btn" data-product-handle="{{ product.handle }}">
+          <i class="far fa-eye"></i>
+        </a>
+        <a href="#" class="wishlist-btn" data-product-id="{{ product.id }}">
+          <i class="far fa-heart"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-content">
+    <h3 class="product-title">
+      <a href="{{ product.url }}">{{ product.title }}</a>
+    </h3>
+
+    <div class="product-rate">
+      {% render 'star-rating', rating: product.metafields.reviews.rating.value | default: 4.8 %}
+    </div>
+
+    <div class="product-bottom">
+      <div class="product-price">
+        {%- if product.compare_at_price > product.price -%}
+          <del>{{ product.compare_at_price | money }}</del>
+        {%- endif -%}
+        <span>{{ product.price | money }}</span>
+      </div>
+
+      <button type="button" class="product-cart-btn js-add-to-cart"
+              data-variant-id="{{ product.selected_or_first_available_variant.id }}">
+        <i class="far fa-shopping-bag"></i>
+      </button>
+    </div>
+  </div>
+</div>

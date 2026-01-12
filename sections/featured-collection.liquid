@@ -1,0 +1,70 @@
+{% comment %}
+  Reusable Featured Collection / Trending / Popular slider
+{% endcomment %}
+
+{% schema %}
+{
+  "name": "Featured Collection",
+  "tag": "section",
+  "class": "product-area",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Featured Items"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 4,
+      "max": 12,
+      "step": 1,
+      "label": "Products to show",
+      "default": 8
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": "Show 'View All' link",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Collection",
+      "settings": {
+        "title": "Trending Items"
+      }
+    }
+  ]
+}
+{% endschema %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="site-heading-inline">
+        <h2 class="site-title">{{ section.settings.title }}</h2>
+        {% if section.settings.show_view_all and section.settings.collection != blank %}
+          <a href="{{ section.settings.collection.url }}">View More <i class="fas fa-angle-double-right"></i></a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="product-wrap">
+    <div class="product-slider owl-carousel owl-theme">
+      {% for product in section.settings.collection.products limit: section.settings.products_to_show %}
+        {% render 'product-card', product_card_product: product %}
+      {% else %}
+        <p>No products found in this collection.</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>

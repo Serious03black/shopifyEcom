@@ -1,0 +1,47 @@
+<header class="header">
+  <!-- Top bar -->
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <ul class="header-top-list">
+            <li><i class="far fa-envelopes"></i> {{ shop.email }}</li>
+            <li><i class="far fa-headset"></i> {{ settings.phone_number | default: '0478 544 571' }}</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 text-end">
+          <ul class="header-top-list">
+            <li><a href="/account">Login</a></li>
+            <li>
+              {% render 'currency-selector' %}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main navigation -->
+  <div class="main-navigation">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="{{ routes.root_url }}">
+          <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          {% render 'main-menu' %}
+        </div>
+
+        <div class="nav-icons">
+          <a href="#" class="search-toggle"><i class="far fa-search"></i></a>
+          <a href="/pages/wishlist"><i class="far fa-heart"></i></a>
+          <a href="{{ routes.cart_url }}" class="cart-icon">
+            <i class="far fa-shopping-bag"></i>
+            <span class="cart-count">{{ cart.item_count }}</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

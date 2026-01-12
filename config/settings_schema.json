@@ -1,0 +1,61 @@
+[
+  {
+    "name": "colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Theme colors"
+      },
+      {
+        "type": "color",
+        "id": "primary",
+        "label": "Primary color",
+        "default": "#2c3e50"
+      },
+      {
+        "type": "color",
+        "id": "accent",
+        "label": "Accent color (buttons)",
+        "default": "#e74c3c"
+      }
+    ]
+  },
+  {
+    "name": "typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Fonts"
+      },
+      {
+        "type": "font_picker",
+        "id": "heading_font",
+        "label": "Heading font",
+        "default": "helvetica_n4"
+      },
+      {
+        "type": "font_picker",
+        "id": "body_font",
+        "label": "Body font",
+        "default": "helvetica_n4"
+      }
+    ]
+  },
+  {
+    "name": "header",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_top_bar",
+        "label": "Show top announcement bar",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "top_bar_text",
+        "label": "Top bar text",
+        "default": "Free shipping on orders over $120"
+      }
+    ]
+  }
+]

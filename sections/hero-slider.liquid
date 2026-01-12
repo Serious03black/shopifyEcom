@@ -1,0 +1,126 @@
+{% comment %}
+  Hero Slider Section - Full-width banner with text overlay and images
+{% endcomment %}
+
+{% schema %}
+{
+  "name": "Hero Slider",
+  "tag": "section",
+  "class": "hero-section hs-1",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Hero Slides"
+    },
+    {
+      "type": "paragraph",
+      "content": "Add 1–6 slides. Each slide needs an image + text content."
+    },
+    {
+      "type": "collection_list",
+      "id": "slides",
+      "label": "Slides",
+      "limit": 6,
+      "info": "Recommended: use images with transparent background or strong contrast"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Slider"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="hero-slider owl-carousel owl-theme">
+  {% for block in section.blocks %}
+    <div class="hero-single">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h6 class="hero-sub-title">{{ block.settings.subtitle | escape }}</h6>
+              <h1 class="hero-title">
+                {{ block.settings.title | escape }}
+              </h1>
+              <p>{{ block.settings.text }}</p>
+              <div class="hero-btn">
+                <a href="{{ block.settings.button1_link }}" class="theme-btn">
+                  {{ block.settings.button1_text | default: 'Shop Now' }}
+                </a>
+                <a href="{{ block.settings.button2_link }}" class="theme-btn theme-btn2">
+                  {{ block.settings.button2_text | default: 'Learn More' }}
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-right">
+              {%- if block.settings.image -%}
+                {{ block.settings.image | image_url: width: 900 | image_tag: loading: 'lazy', class: 'img-fluid' }}
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slide Image"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Welcome to Furniture Roots!"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Main Title",
+          "default": "We offers modern <span>furniture</span> for you"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "There are many variations of passages..."
+        },
+        {
+          "type": "url",
+          "id": "button1_link",
+          "label": "Button 1 Link"
+        },
+        {
+          "type": "text",
+          "id": "button1_text",
+          "label": "Button 1 Text",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "button2_link",
+          "label": "Button 2 Link"
+        },
+        {
+          "type": "text",
+          "id": "button2_text",
+          "label": "Button 2 Text",
+          "default": "Learn More"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

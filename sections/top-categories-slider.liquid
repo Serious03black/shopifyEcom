@@ -1,0 +1,61 @@
+{% comment %}
+  Top Categories Slider with icons
+{% endcomment %}
+
+{% schema %}
+{
+  "name": "Top Categories Slider",
+  "tag": "section",
+  "class": "category-area pt-80 pb-100",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Top Category"
+    },
+    {
+      "type": "url",
+      "id": "view_more_link",
+      "label": "View More Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Top Categories Slider"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="site-heading-inline">
+        <h2 class="site-title">{{ section.settings.title }}</h2>
+        {% if section.settings.view_more_link %}
+          <a href="{{ section.settings.view_more_link }}">View More <i class="fas fa-angle-double-right"></i></a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="category-slider owl-carousel owl-theme">
+    {% for link in linklists['categories-menu'].links %}
+      <div class="category-item">
+        <a href="{{ link.url }}">
+          <div class="category-info">
+            <div class="icon">
+              <!-- You can use metafields or just static images per collection -->
+              <img src="{{ 'icon/' | append: link.title | handleize | append: '.svg' | asset_url }}" alt="{{ link.title }}">
+            </div>
+            <div class="content">
+              <h4>{{ link.title }}</h4>
+              <p>{{ link.object.all_products_count }} Items</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
