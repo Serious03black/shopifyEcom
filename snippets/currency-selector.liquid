@@ -1,0 +1,17 @@
+{% comment %}
+  Simple currency selector (expand later with app if needed)
+{% endcomment %}
+
+{% if shop.enabled_currencies.size > 1 %}
+  <div class="currency-selector">
+    <select id="CurrencySelector" onchange="location = this.value;">
+      {% for currency in shop.enabled_currencies %}
+        <option 
+          value="?currency={{ currency.iso_code }}"
+          {% if currency.iso_code == cart.currency.iso_code %}selected{% endif %}>
+          {{ currency.iso_code }}
+        </option>
+      {% endfor %}
+    </select>
+  </div>
+{% endif %}
