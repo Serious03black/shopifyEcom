@@ -47,7 +47,7 @@
     </h3>
 
     <div class="product-rate">
-      {% render 'star-rating', rating: product.metafields.reviews.rating.value | default: 4.8 %}
+      {% render 'star-rating', rating: product.metafields.reviews.rating.value, default: 4.8 %}
     </div>
 
     <div class="product-bottom">
@@ -64,4 +64,15 @@
       </button>
     </div>
   </div>
-</div>
+</div>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'star-rating', rating: product.metafields.reviews.rating.value
+    | default: 4.8 %}"
+  to: "{% render 'star-rating', rating: product.metafields.reviews.rating.value, default:
+    4.8 %}"
+  position: 1512..1601
+{%- endcomment -%}
